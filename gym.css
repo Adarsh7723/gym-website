@@ -54,7 +54,7 @@ body{
 }
 /* first half */
 .first-half img{
-    height: 500px;
+    height: 600px;
     width: 100%;
     background-color: dimgrey;
     position: relative;
@@ -119,7 +119,7 @@ body{
 
 /* second-half */
 .second-half{
-    height: 600px;
+    height: 700px;
     width: 100%;
     background-color: black;
     display: flex;
@@ -139,6 +139,7 @@ body{
     font-weight: 700;
     font-size: 15px;
     margin-bottom: 10px;
+    margin-top: 20px;
 }
 .inner-content{
     height: 100%;
@@ -207,11 +208,11 @@ body{
 .third-half-image{
     margin: 20px 10px 20px;
     height: 500px;
-    width: 50%;
+    width: 480px;
     background-color: brown;
     border-top: 10px solid greenyellow;
     border-right:10px solid greenyellow ;
-    background-image: url('assets/third.jpg');
+    background-image: url('assets/third.jpeg');
     background-size:cover;
     background-repeat: no-repeat;
 }
@@ -287,4 +288,179 @@ body{
     font-weight: 300;
     padding-left: 10px;
     padding-top: 0;
+}
+/* fourth page */
+.fourth-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.pricing {
+  padding: 50px 20px;
+}
+
+.pricing h1 {
+  font-size: 2.5rem;
+  color: greenyellow;
+  margin-bottom: 10px;
+}
+
+.pricing p {
+  margin-bottom: 40px;
+  color: #ccc;
+}
+
+/* Container for Cards */
+.pricing-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Cards */
+.card {
+  width: 300px;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card h2 {
+  color: greenyellow;
+  margin-bottom: 10px;
+}
+
+.card .price {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.card ul li {
+  margin: 10px 0;
+  color: #ddd;
+}
+
+/* Card Colors */
+.black-card {
+  background-color: #000;
+}
+
+.gray-card {
+  background-color: #222;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: greenyellow;
+  color: #000;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #adff2f;
+  transform: scale(1.05);
+}
+
+/* Hover Effect on Cards */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px greenyellow;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .pricing-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+hr{
+    padding: 1px 20px;
+    background-color: greenyellow;
+    border: none;
+    color: black;
+}
+/* footer */
+.footer {
+  background: #000;
+  color: white;
+  padding: 40px 20px 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.footer h2 {
+  color: greenyellow;
+  margin-bottom: 10px;
+}
+
+.footer h3 {
+  color: greenyellow;
+  margin-bottom: 15px;
+}
+
+.footer-about,
+.footer-links,
+.footer-social {
+  flex: 1 1 250px;
+  margin: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin: 8px 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: greenyellow;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 22px;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: greenyellow;
+}
+
+.footer-bottom {
+  border-top: 1px solid greenyellow;
+  padding-top: 15px;
+  font-size: 14px;
 }
